@@ -1,0 +1,19 @@
+
+.tamanho{ height: 150px;	width: 305px;}
+.text{ font-size: 5em; text-align: center; padding: 20px;}
+.marginTop{
+	margin-top: 10px;
+}
+
+
+
+@media(max-width:768px){
+	.esconder {
+		display: none;
+	}
+}
+@media(min-width:768px){
+	.esconder {
+		display: none;
+	}
+}

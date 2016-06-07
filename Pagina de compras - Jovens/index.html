@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="">
+
+    <title>Comprar</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/compras.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default " id="navegacao" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#"><img id="logo" src="img/logoRet1.png"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><p class="navbar-text">Já tem sua conta ?</p></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="text1" ><b>Login</b> <span class="caret"></span></a>
+			<ul id="login-dp" class="dropdown-menu">
+				<li>
+					 <div class="row">
+							<div class="col-md-12">
+								<p class="texto">Login via</p>
+								<div class="social-buttons">
+									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+								</div>
+                                <p class="texto">ou</p>
+								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputEmail2">Email</label>
+											 <input type="email" class="form-control" id="Email" placeholder="Email" required>
+										</div>
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputPassword2">Senha</label>
+											 <input type="password" class="form-control" id="Password" placeholder="Senha" required>
+                                             <div class="help-block text-right"><a href="">Esqueceu sua senha ?</a></div>
+										</div>
+										<div class="form-group">
+											 <button type="submit" class="btn btn-primary btn-block">Cadastre-se</button>
+										</div>
+										<div class="checkbox">
+											 <label>
+											 <input type="checkbox"> <p class="texto">Mantenha-me logado</p>
+											 </label>
+										</div>
+								 </form>
+							</div>
+							<div class="bottom text-center">
+								<a href="pg_cadastro.html"> <strong>Cadastre-se</strong> </a>
+							</div>
+					 </div>
+				</li>
+			</ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <p class="lead"><strong>JOVENS DE SUCESSO</strong></p>
+                <div class="list-group">
+                  <a href="#" class="list-group-item">Livros</a>
+                  <a href="#" class="list-group-item">Orientações</a>
+                  <a href="#" class="list-group-item">E-books</a>
+                  <p><br></br>Para realizar sua compra, siga os passos abaixo:</p>
+                  <img src="img/passos.png" height="65" width="265">
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="row carousel-holder">
+                    <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="img/banner.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="img/banner.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="img/banner.png" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img id="produto" src="img/produto1.jpg" >
+                            <div class="caption">
+                                <h4>Por Apenas <strong>R$37,50</strong></h4>
+                                <h4><a href="segredos_imortais.html">Os Segredos Dos Imortais</a>
+                                </h4>
+                                <p>Formato E-Book</p>
+                                <button type="button" class="btn-compra" name="btn-comprar">Comprar Agora</button>
+                            </div>
+  
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img id="produto" src="img/produto2.jpg">
+                            <div class="caption">
+                                <h4>Por Apenas <strong>R$15,00</strong></h4>
+                                <h4><a href="curriculo_persuasivo.html">Como Criar um Currículo <br>Altamente Persuasivo</a></h4>
+                                <button type="button" class="btn-compra" name="btn-comprar">Comprar Agora</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img id="produto" src="img/produto3.jpg">
+                            <div class="caption">
+                                <h4>Por Apenas <strong>R$799,50</strong></h4>
+                                <h4><a href="orientacao_prof.html">Orientação Profissional Online<br></br></a>
+                                </h4>
+                                <button type="button" class="btn-compra" name="btn-comprar">Comprar Agora</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img id="produto" src="img/produto5.jpg">
+                            <div class="caption">
+                                <h4>Por Apenas <strong>R$15,00</strong></h4>
+                                <h4><a href="direto_ponto.html">Direto ao ponto!<br> <h5>Como Ser Aprovado em Entrevistas</h5> </a>
+                                </h4>
+                    	        <button type="button" class="btn-compra" name="btn-comprar">Comprar Agora</button> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img id="produto" src="img/produto6.jpg">
+                            <div class="caption">
+                                <h4>Por Apenas <strong>R$15,00</strong></h4>
+                                <h4><a href="escolher_prof.html">Como Escolher a Profissão <br>Certa, em 3 Passos!</a>
+                                </h4>
+                                <button type="button" class="btn-compra" name="btn-comprar">Comprar Agora</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+        <hr>
+        
+        <!-- Footer -->
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline centro">
+                    	<h3>Síga-Nos Nas Redes Sociais</h3>
+                        <li><a href="https://www.facebook.com/JovensDeSucesso"><img src="img/facebook.png"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC5KGtQ-ibxovbtUkrHeEzgw?view_as=public"><img src="img/youtube.png"></a></li>
+                        <li><a href="https://plus.google.com/+Jovensdesucesso/posts/p/pub"><img src="img/google.png"></a></li>
+                        <li><a href="https://twitter.com/JovensSucesso"><img src="img/twitter.png"></a></li>
+                        <li><a href="https://instagram.com/fly_mauricio/"><img src="img/insta.png"></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

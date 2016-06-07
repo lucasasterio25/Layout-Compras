@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="">
+
+    <title>Comprar</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/compras.css" rel="stylesheet">
+    <link href="css/cadastro.css" rel="stylesheet">
+    <link href="css/cronometro.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default " id="navegacao" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#"><img id="logo" src="img/logoRet1.png"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><p class="navbar-text">Já tem sua conta ?</p></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="text1" ><b>Login</b> <span class="caret"></span></a>
+      <ul id="login-dp" class="dropdown-menu">
+        <li>
+           <div class="row">
+              <div class="col-md-12">
+                <p class="texto">Login via</p>
+                <div class="social-buttons">
+                  <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                  <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                </div>
+                                <p class="texto">ou</p>
+                 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                    <div class="form-group">
+                       <label class="sr-only" for="exampleInputEmail2">Email</label>
+                       <input type="email" class="form-control" id="Email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                       <label class="sr-only" for="exampleInputPassword2">Senha</label>
+                       <input type="password" class="form-control" id="Password" placeholder="Senha" required>
+                                             <div class="help-block text-right"><a href="">Esqueceu sua senha ?</a></div>
+                    </div>
+                    <div class="form-group">
+                       <button type="submit" class="btn btn-primary btn-block">Cadastre-se</button>
+                    </div>
+                    <div class="checkbox">
+                       <label>
+                       <input type="checkbox"> <p class="texto">Mantenha-me logado</p>
+                       </label>
+                    </div>
+                 </form>
+              </div>
+              <div class="bottom text-center">
+                <a href="pg_cadastro.html"> <strong>Cadastre-se</strong> </a>
+              </div>
+           </div>
+        </li>
+      </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <!-- Page Content -->
+<div class="centralizar">
+	
+<form method="" action="#">
+<h1>DADOS CADASTRAIS</h1>
+	<div class="row form-row">
+
+
+	    <div class="row form-row">
+	        <div class="col-sm-2 form-label"> Nome </div>
+	        <div class="col-sm-3"><input type="text" class="form-control" maxlength="20" name="Nome"></div>
+	        <div class="col-sm-2 form-label"> Sobrenome </div>
+	        <div class="col-sm-3"><input type="text" class="form-control" maxlength="50" name="Sobrenome"></div>
+	    </div>
+	    <div class="row form-row">
+	        <div class="col-sm-2 form-label">E-mail</div>
+	        <div class="col-sm-3"><input type="email" class="form-control" maxlength="60" name="Email"></div>
+	        <div class="col-sm-2 form-label">Nascimento</div>
+	        <div class="col-sm-3"><input type="date" class="nascimento form-control" name="DataNascimento"></div>
+	    </div>
+	    <div class="row form-row">
+	        <div class="col-sm-2 form-label"> Telefone </div>
+	        <div class="col-sm-3"><input type="tel" class="form-control telefone" maxlength="15" name="Telefone"></div>
+
+	    </div>
+	    <div class="row form-row">
+	        <div class="col-sm-2 form-label">Sexo</div>
+	        <div class="col-sm-2"><input type="radio" name="Sexo" checked value="M">Masculino</div>
+	        <div class="col-sm-2"><input type="radio" name="Sexo" value="F">Feminino</div><br>
+
+	    </div>
+	    <div class="row form-row">
+	        <div class="col-sm-2 form-label">Estado </div>
+	        <div class="col-sm-3"><select class="form-control" name="EstadoId"><option value=""></option></select></div>
+	        <div class="col-sm-2 form-label">Cidade </div>
+	        <div class="col-sm-3"><select class="form-control " name="CidadeId"></select></div>
+	    </div>
+	    <div class="row form-row">
+	        <div class="col-sm-2 form-label"> Senha</div>
+	        <div class="col-sm-3"><input type="password" class="form-control" maxlength="20" name="Senha"></div>
+
+	    </div>
+
+	    <div class="row form-row">
+	        <div class="col-sm-2 form-label"> Confirmar Senha </div>
+	        <div class="col-sm-3"><input type="password" class="form-control" maxlength="20" name="Confirma"></div>
+	    </div> <br><br>
+
+      <div class="row">
+          <div class="col-sm-8 btn-div form-row">
+              <button type="submit" class="btn-pagto" name="btn-confirmar-pessoais">Fazer cadastro</button>
+          </div>
+      </div>
+
+      <hr/>
+      <h3>Caso for efetuar uma compra insera os dados do cartão, abaixo</h3>
+      <div class="row form-row">
+          <div class="col-sm-1 form-label"> Numero :</div>
+          <div class="col-sm-3"><input type="text" class="form-control" maxlength="50" name="cartao"></div>
+          <div class="col-sm-1 form-label"> Codigo :</div>
+          <div class="col-sm-3"><input type="password" class="form-control" maxlength="20" name="codigo"></div>
+          <button type="submit" class="btn-pagto" name="btn-confirmar-pessoais">Inserir cartão</button>
+      </div> 
+
+
+
+      <hr/>
+
+<h3>Caso tenha assistido uma de nossas palestras, insira abaixo o código de desconto impresso no seu Golden Card (ative seu desconto antes de finalizar o cadastro)</h3>
+	    <div class="row form-row op-only">
+	            <div class="col-sm-10 form-label"> 
+	            	<input type="text" class="form-control" maxlength="30" name="Token">
+	            </div>
+	        <div class="col-sm-2">
+	        <button type="button" onclick="cronometro(1)" data-toggle="modal" data-target="#myModal" class="btn-pagto" name="btn-confirmar-pessoais">Ativar Token</button>  
+	        </div>
+	    </div><hr/>
+
+
+
+      <div class="col-sm-12"> 
+         <button class="btn btn-large btn-success glyphicon glyphicon-open-file" data-toggle="modal" data-target="#myModal1"></button>
+         <strong>Clique no ícone ao lado para visualizar os termos do contrato.<br></strong>
+      </div>
+
+      <div class="col-sm-12">
+      <input type="radio" name="termos"> <strong> AFIRMO QUE LI E ACEITO OS TERMOS DE ADESÃO DISPOSTOS ACIMA</strong>
+      </div>
+
+
+  </form>
+</div><hr>
+
+<div class="row payment">
+        <div class="col-sm-5">
+          <img src="img/banner.png" class="img-responsive"/>
+        </div>
+
+  <div class="col-sm-5" style="float: right;">
+
+    <span class="valor-cheio">Adquira pelo PagSeguro - UOL R$ <span name="valor-orientacao">1.500,00</span></span><br />
+      <input type="button" id="pagSeguroBtn" class="btn-pagto" value="Pague com PagSeguro"/>
+                <br /><br /><br />
+      <span class="valor-cheio">Adquira pelo Paypal - R$ <span name="valor-orientacao">1.500,00</span></span><br />
+      <input type="button" id="pagSeguroBtn" class="btn-pagto" value="Pague com PayPal"/>
+      </div>
+</div>
+
+        <!-- Footer -->  
+    <div class="container"><hr>
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline centro">
+                      <h3>Síga-Nos Nas Redes Sociais</h3>
+                        <li><a href="https://www.facebook.com/JovensDeSucesso"><img src="img/facebook.png"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC5KGtQ-ibxovbtUkrHeEzgw?view_as=public"><img src="img/youtube.png"></a></li>
+                        <li><a href="https://plus.google.com/+Jovensdesucesso/posts/p/pub"><img src="img/google.png"></a></li>
+                        <li><a href="https://twitter.com/JovensSucesso"><img src="img/twitter.png"></a></li>
+                        <li><a href="https://instagram.com/fly_mauricio/"><img src="img/insta.png"></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    </div>
+    <!-- /.container -->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">CORRA!!</h4>
+                      </div>
+                      <div class="modal-body">                
+                    <h1>VOCÊ TEM 48 HORAS</h1>
+
+      <div class="col-md-12 text-center center-block">
+        <div id="tempo" type="button" class="btn btn-danger tamanho text">00:00:00</div>
+      </div>
+
+      <div class="esconder">
+       <div class="marginTop col-md-12 text-center center-block">
+         <div class="col-md-4 col-md-offset-4">
+            <div class="input-group">
+              <span class="input-group-addon">Min</span>
+              <input id="minutos" type="number" min="0" max="59"  class="form-control" placeholder="Minutos">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">Hor</span>
+              <input id="horas" type="number" min="0"  value="48" class="form-control" placeholder="Minutos">
+            </div>
+             <div class="input-group">
+              <span class="input-group-addon">Seg</span>
+              <input id="segundos" type="number"  min="0" max="59" class="form-control" placeholder="Segundos">
+              <input id="pause" type="hidden" value="0"  class="form-control">
+            </div>
+          </div>
+      </div>
+</div>
+<h3>A partir de agora, para completar sua compra senão seu Token será destivado e perderá o desconto</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content"> 
+                      <div class="modal-header header1">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title header1title" id="myModalLabel"><strong>TERMOS DE ADESÃO</strong></h4>
+                      </div>
+                      <div class="modal-body">                
+<p>
+Por este termo de garantia as partes resolvem pactuar o quanto segue: <br>De um lado, o consumidor que de livre e espontânea preenche um formulário com seus dados pessoais, sendo esta parte integrante deste termo; do outro lado Jovens De Sucesso .Com - CNPJ: 19.271.448/0001-78, empresa detentora dos direitos dos produtos "Orientação Profissional Online"; e dos Livros: "Como Escolher a Profissão Certa, em 3 Passos"; "Como Criar Um Currículo Altamente Persuasivo"; "Direto ao Ponto!"; e "Os Segredos dos Imortais", ora descriminado como fornecedor. <br><br>
+
+
+O Consumidor declara sob as penas da lei que é maior de 18 anos; ou está acompanhado por um responsável maior de 18 anos de idade. Sendo assim, afirma que leu e tem pleno conhecimento e capacidade civil para realizar a presente aquisição. <br><br>
+
+
+Utilização e Disponibilidade do Software - Orientação Profissional Online <br><br>
+
+
+O consumidor entende e aceita que todo o processo de sua orientação profissional será realizado 100% (cem por cento) online e que o mesmo não receberá nenhum tipo de material físico. <br><br>
+
+
+O consumidor entende e aceita que todo o contato com o psicólogo responsável pela sua orientação profissional se dará exclusivamente, através do software Orientação Profissional Online. Sem nenhum tipo de contato presencial. <br><br>
+
+
+Após formalizar todos os passos de pagamento, o consumidor receberá em seu e-mail todos os dados necessários para melhor utilização do produto Orientação Profissional Online; <br><br>
+
+
+O consumidor entende e aceita a necessidade de seguir exatamente as atividades solicitadas durante sua orientação profissional e que caso isso não venha a acontecer o resultado pode não ser o adequado. Sendo assim, o consumidor assume total responsabilidade pelo resultado de sua orientação, já que o mesmo se dará de acordo com seu comprometimento em realizar as atividades da maneira solicitada e com o máximo de veracidade em suas respostas. <br><br>
+
+
+Utilização e Disponibilidade dos Livros <br><br>
+
+
+O consumidor entende e aceita que todos os livros estão em formato e-book e que o mesmo não será oferecido em formato impresso, através desta aquisição. <br><br>
+
+
+Sendo assim, o processo de recebimento do livro adquirido será realizado 100% (cem por cento) online, e que o mesmo não receberá nenhum tipo de material físico. <br><br>
+
+
+Após formalizar todos os passos de pagamento, o consumidor receberá em seu e-mail todos os dados necessários para melhor utilização do e-book adquirido; <br><br>
+
+
+O consumidor entende e aceita a necessidade de seguir todos os passos discriminados no e-mail enviado, após a confirmação de pagamento, para poder acessar o produto adquirido; <br><br>
+
+
+O consumidor assume total responsabilidade pelo uso do produto adquirido. <br><br>
+
+
+Sigilo de Informações: <br><br>
+
+
+O fornecedor se compromete a manter em sigilo todo e qualquer dado pessoal disponibilizado pelo consumidor. Assim como suas atividades desenvolvidas durante sua orientação profissional. <br><br>
+
+
+Responsabilidades do Usuário:<br><br> 
+
+
+O consumidor se compromete em não divulgar seus dados de acesso referentes a "Orientação Profissional Online ou aos livros adquiridos, a terceiros de nenhuma natureza. <br><br>
+
+
+O consumidor também se compromete a não divulgar nenhuma das atividades realizadas dentro do sistema da Orientação Profissional Online ou do conteúdos dos livros oferecidos pela fornecedora, através de imagens, videos , áudios, textos, impressões , ou por qualquer outro meio. <br><br>
+
+
+O consumidor entende que a Orientação Profissional Online e os Livros, são produtos de propriedade privada, com todos os seus direitos reservados a empresa JovensdeSucesso.com. Sendo assim, qualquer ação do consumidor que caracterize plágio; ou venha a prejudicar moral ou financeiramente a empresa fornecedora, será representada judicialmente. <br><br>
+
+
+Observações Importantes sobre "Orientação Profissional Online": <br><br>
+
+
+* Serão agendadas 8 datas (8 Sessões com o Psicólogo). As sessões ocorrerão semanalmente, sendo uma sessão por semana, durante 8 semanas.<br><br> 
+* Semanalmente o psicólogo responsável pela orientação liberará uma atividade diferente para o consumidor. <br> 
+* O consumidor será notificado por e-mail, sobre a liberação de suas atividades. <br> 
+* Uma vez que a atividade foi concluída e enviada ao psicólogo, o consumidor não poderá refazê-la. <br> 
+* O Psicólogo analisará as atividades com base na veracidade das informações fornecidas pelo consumidor, o que pode acarretar diretamente na análise final dos resultados; <br> 
+* A Orientação Profissional Online fornecerá os perfis profissionais e as profissões nas quais o consumidor se encaixa, conforme análise de todas as atividades desenvolvidas ao longo das etapas de orientação. <br> 
+* A decisão final sobre a escolha da profissão ficará a critério do consumidor e não do profissional que o orientará. <br> 
+
+
+Agendamento das Atividades: <br> <br> 
+
+
+Assim que o pagamento for confirmado, o consumidor receberá um Login e Senha de acesso ao sistema da Orientação Profissional Online, que apenas poderá ser acessado pelo site www.orientacaoprofissionalonline.com. <br> <br> 
+
+
+Ao acessar o sistema, o consumidor terá acesso ao botão "AGENDA", onde estarão disponíveis as datas para o agendamento. O consumidor escolherá a data inicial e o sistema selecionará o restante das datas automaticamente, a saber, uma por semana, nas semanas subsequentes. 
+<br> <br> 
+
+Caso o consumidor não realize suas atividades semanais e as envie ao psicólogo, dentro de um prazo de 48h após sua liberação, o sistema automaticamente anulará as datas agendadas. Uma vez que isso ocorra, o consumidor se compromete a reagendar as sessões restantes, acessando o botão agenda. Sabendo que as datas serão ofertadas de acordo com a disponibilidade de agenda dos psicólogos. <br> <br> 
+
+
+Garantia e Devolução 
+
+
+Em caso de arrependimento da aquisição, dentro do prazo legal, disponibilizado pelo código de defesa do consumidor na data de aquisição. A devolução do valor pago será realizada, de acordo com a forma contratada, sendo que o fornecedor trabalha com algumas empresas parceiras na realização dessa compra, tais como: PAGSEGURO, MOIP, PAYPAL e HOTMART. Um dos parceiros serão utilizados pelo consumidor na efetivação da sua compra e também da devolução do valor pago. <br> <br> 
+
+
+O consumidor assumirá para si qualquer taxa ou multa praticada pela empresa escolhida para intermediar o pagamento e contratação do produto Orientação Profissional Online. <br> <br> 
+
+
+Caso a solicitação de cancelamento venha a existir, o fornecedor se compromete a enviar para o e-mail do consumidor o "comprovante de cancelamento" da compra realizada através de um dos parceiros acima discriminados, junto com o "termo de devolução de garantia". O prazo para ser concretizado o cancelamento da compra e a devolução dos valores envolvidos são de até 45 dias; já que o processo envolve mais de uma empresa e cada parceiro possui sua própria política de devolução. 
+
+
+Observações Importantes sobre os Livros: <br> <br> 
+
+
+*Todos os livros adquiridos através deste canal, são oferecidos em formato e-book; 
+*Para acessar o livro em formato e-book, o consumidor deverá realizar o cadastro de seus dados corretamente, pois os mesmos serão utilizados para a confirmação de dados de acesso, após a confirmação do pagamento; 
+*Após a confirmação do pagamento o consumidor receberá um e-mail, com a "chave de acesso" para poder baixar o arquivo do livro adquirido (tempo máximo de 48h); <br> <br> 
+
+
+Responsabilidade de Aquisição: <br> <br> 
+
+
+O consumidor declara, sob as penas da lei, que leu e está ciente do uso da garantia, concordando com as condições. <br> <br> 
+
+
+Fica eleito o Fórum do Ipiranga, do Estado de São Paulo para dirimir quaisquer controvérsias inerentes do presente termo de garantia.<br> <br> 
+
+                    </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cronometro.js"></script>
+
+</body>
+
+</html>
+
+
+
